@@ -8,10 +8,6 @@ import DateMomentUtils from '@date-io/moment';
 import chef from "../../Assets/cocina2.jpg";
 import Navbar from '../Main/Navbar';
 import Footer from '../Main/Footer';
-import {
-    DateTimePicker,
-    MuiPickersUtilsProvider,
-  } from '@material-ui/pickers';
 import NavbarCocina from './NavbarCocina';
   
 

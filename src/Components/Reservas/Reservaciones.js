@@ -6,13 +6,10 @@ import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import Slider from '@mui/material/Slider';
-import DateMomentUtils from '@date-io/moment';
 import hero from "../../Assets/cocina.jpg";
 
-import {
-  DateTimePicker,
-  MuiPickersUtilsProvider,
-} from '@material-ui/pickers';
+import { AdapterMoment } from "@mui/x-date-pickers/AdapterMoment";
+import { LocalizationProvider, DateTimePicker } from "@mui/x-date-pickers";
 
 function HeroSection() {
   return (
@@ -142,15 +139,25 @@ function ReservationSection() {
                 color: 'orange',
               }}
             />
-             <MuiPickersUtilsProvider utils={DateMomentUtils}>
-              <DateTimePicker
-                label="Fecha y hora de reservación"
-                value={dateTimeValue}
-                placeholder="Fecha de Reservación"
-                onChange={setDateTimeValue}
-                style={{ backgroundColor: 'white', border: 'none',borderRadius: '5px', marginBottom: '1rem'}}
-              />
-            </MuiPickersUtilsProvider>
+             <LocalizationProvider dateAdapter={AdapterMoment}>
+                <DateTimePicker
+                  label="Fecha y hora de reservación"
+                  value={dateTimeValue}
+                  onChange={setDateTimeValue}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      placeholder="Fecha de Reservación"
+                      sx={{
+                        backgroundColor: "white",
+                        borderRadius: "5px",
+                        marginBottom: "1rem",
+                        "& fieldset": { border: "none" }, // Removes default border
+                      }}
+                    />
+                  )}
+                />
+              </LocalizationProvider>
             <input
               label="Observaciones"
               placeholder="Observaciones"
