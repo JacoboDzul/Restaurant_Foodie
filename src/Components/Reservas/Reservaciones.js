@@ -139,7 +139,7 @@ function ReservationSection() {
                 color: 'orange',
               }}
             />
-             <LocalizationProvider dateAdapter={AdapterMoment}>
+             {/* <LocalizationProvider dateAdapter={AdapterMoment}>
                 <DateTimePicker
                   label="Fecha y hora de reservación"
                   value={dateTimeValue}
@@ -157,7 +157,7 @@ function ReservationSection() {
                     />
                   )}
                 />
-              </LocalizationProvider>
+              </LocalizationProvider> */}
             <input
               label="Observaciones"
               placeholder="Observaciones"
