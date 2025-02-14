@@ -1,0 +1,106 @@
+:root {
+    --fontTexto:  'Raleway', sans-serif;
+    --fontHeading: 'Staatliches', cursive;
+
+    --azul : #00487C;
+    --rojo : #A01C48;
+    --naranja : #F58549;
+    --amarillo: #ECA400;
+    --verde : rgb(72, 183, 72);
+
+    --gris: #969696;
+    --grisOscuro : #707070;
+    --grisClaro: rgb(243, 243, 243);
+}
+
+.platillo{
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.adaptive-button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    background-color: var(--verde);
+    margin-bottom: 25px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adaptive-button:hover{
+    background-color: #20d958;
+    transition: 0.3s;
+}
+
+.rdt_TableCol{
+    background-color: #ef791e;
+}
+
+.rdt_TableCell{
+    background-color: rgb(234, 213, 185);
+}
+
+.platilloBuscador{
+    margin-left: 2px;
+    height: 45px;
+    font-size: 15px;
+    width: 350px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.deletPlatillo{
+    background-color: rgb(249, 61, 61);
+    border: none;
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.deletPlatillo:hover{
+    background-color: #ef791e;
+    color: white;
+    transition: 0.3s;
+}
+
+.csv-button{
+    background-color: #ffe522;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    right: 70px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.excelIcon{
+    font-size: 20px;
+}
+
+.csv-button:hover{
+    background-color: #fce93f;
+    transition: 0.3s;
+}
+
+.editReservacion{
+    background-color: rgb(26, 141, 255);
+    border: none;
+    color: black;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;   
+}
+
+.editReservacion:hover{
+    background-color: #ef791e;
+    color: white;
+    transition: 0.3s;
+}
+
+.tabla{
+    margin-top: 100px;
+}
